@@ -21,8 +21,12 @@ ActiveRecord::Schema.define(version: 20170628151940) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.string   "slug"
+<<<<<<< HEAD
     t.integer  "status"
     t.string   "integer",    default: "0"
+=======
+    t.integer  "status", default:0
+>>>>>>> a789c9515ae7ee29646ded8943036716b05a35a5
     t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
   end
 
