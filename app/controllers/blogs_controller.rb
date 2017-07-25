@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
-
+  layout "blog"
   # GET /blogs
   # GET /blogs.json
   def index
@@ -38,7 +38,7 @@ class BlogsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /blogs/1
+  # PATCH/PUT /blogs/1s
   # PATCH/PUT /blogs/1.json
   def update
     respond_to do |format|
